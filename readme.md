@@ -11,12 +11,12 @@ most of it.  Blocks ragebait.
 
  - Install the [tampermonkey](https://www.tampermonkey.net/) addon.
    + Create a new script, and paste in the contents of reddit.js
- - Install [ollama](https://ollama.com/)
+ - Install [ollama](https://ollama.com/), then
    + `$ ollama pull llama3`
    + `$ ollama serve`
      - I'm pretty sure you need to do this manually
    + ollama should be running on port 11434 (default)
- - Run python server (in this directory)
+ - Run python server (in this directory) via these commands:
    + `$ virtualenv venv`
    + `$ venv/bin/pip install -r requirements.txt`
    + `$ venv/bin/flask --app llm_cache_server run --host=0.0.0.0 --with-threads`
